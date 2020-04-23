@@ -13,6 +13,7 @@ private:
 public:
 	Game();
 	virtual ~Game();
+	void end_application();
 	void update_events();
 	void update_dt();
 	void update();

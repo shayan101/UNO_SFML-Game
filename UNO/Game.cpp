@@ -48,6 +48,11 @@ Game::~Game()
 	}
 }
 
+void Game::end_application()
+{
+	cout << "ending application\n";
+}
+
 void Game::update_events()
 {
 	while (window->pollEvent(event)) {
@@ -68,6 +73,16 @@ void Game::update()
 
 	if (!states.empty()) {
 		states.top()->update(dt);
+
+		if (states.top()->get_end()) {
+			states.top()->end_state();
+			states.pop();
+		}
+	}
+	else
+	{
+		end_application();
+		window->close();
 	}
 }
 
