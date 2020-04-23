@@ -21,12 +21,15 @@ void GameState::update_keybinds(const float & _dt)
 void GameState::update(const float &_dt)
 {
 	update_keybinds(_dt);
-	
-	if (Keyboard::isKeyPressed(Keyboard::A)) {
-		cout << "A\n";
-	}
+	player.update(_dt);
 }
 
-void GameState::render(const RenderTarget *_target)
+void GameState::render(RenderTarget *_target)
 {
+	if (_target) {
+
+	}
+	else {
+		player.render(window);
+	}
 }
