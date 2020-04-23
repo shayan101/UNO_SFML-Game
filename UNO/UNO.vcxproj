@@ -21,12 +21,18 @@
   <ItemGroup>
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Driver.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameState.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="State.cpp" />
     <ClCompile Include="UNO.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameState.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="State.h" />
     <ClInclude Include="UNO.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

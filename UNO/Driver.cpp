@@ -1,7 +1,8 @@
-#include "UNO.h"
+#include "Game.h"
 
 int main()
 {
-	UNO::play();
+	Game * g = new Game();
+	g->run();
 	return 0;
 }
